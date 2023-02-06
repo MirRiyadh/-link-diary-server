@@ -18,7 +18,7 @@ const client = new MongoClient(process.env.DB_USER_URL, {
 
 const run = async () => {
   try {
-    const db = client.db("boldBlogger");
+    const db = client.db("linkDiary");
     const contentCollection = db.collection("content");
     const tagsCollection = db.collection("tags");
 
